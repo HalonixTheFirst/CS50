@@ -1,0 +1,32 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+The following are times taken by the algorithm:
+Random5000: 0.063s
+Random50000: 6.881s
+Reversed5000: 0.064s
+Reversed50000: 5.494s
+From these times we can guess that since the times only drastically vary with size and not with order of input, which suggests a bubble sort algorithm.
+
+
+sort2 uses:Merge Sort
+How do you know?:
+The following are times taken by the algorithm:
+Random5000: 0.021s
+Random50000: 0.928s;
+Reversed5000: 0.021s
+Reversed50000: 1.076s
+
+From these times we can conclude that changing the input has minimal effect on the time taken so it must be nlogn(Merge Sort).
+
+sort3 uses: Selection Sort
+
+How do you know?:
+The following are times taken by the algorithm:
+
+Random5000: 0.038s
+random50000: 2.775s
+Reversed5000: 0.042s
+Reversed50000: 2.880s
+
+This shows that the reversed inputs take the most time which is also the worst case for the Selection Sort Algorithm.

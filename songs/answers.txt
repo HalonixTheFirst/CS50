@@ -1,0 +1,2 @@
+1. We can calculate the average energy, valence and daneability of the songs they listen to and then calculate their audio Aura.
+2. The user might have no idea about the energy, valence and danceability of a given song. We can do this in a better way if we look at the genres of all the songs they have listened to .
