@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    PortFolio
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Price</th>
+                <th>Shares</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in stocks %}
+            <tr>
+                <td>{{stock.symbol}}</td>
+                <td>{{"%.2f"|format(stock.price)}}</td>
+                <td>{{stock.shares}}</td>
+                <td>{{"%.2f"|format(stock.total)}}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td>Cash</td>
+                <td>{{"%.2f"|format(cash)}}</td>
+            </tr>
+            <tr>
+                <td>Total Value</td>
+                <td>{{"%.2f"|format(total_value)}}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
